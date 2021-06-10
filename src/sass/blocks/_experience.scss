@@ -1,0 +1,100 @@
+.experience {
+    padding-top: 120px;
+    &__header {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subheader {
+        margin-top: 6px;
+        text-align: center;
+        font-size: 36px;
+        line-height: 60px;
+    }
+    &__divider {
+        margin: 25px auto 0px ;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 417px 417px;
+        grid-template-rows: minmax(379px auto);
+        column-gap: 136px;
+    }
+    &__column {
+        padding-left: 50px;
+        position: relative;
+
+    }
+    
+    &__item_header {
+        font-size: 20px;
+        line-height: 30px;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            background: $main-color;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -10%;
+        }
+    }
+    &__item {
+        margin-top: 45px;
+        position: relative;
+        &_icon {
+            width: 25px;
+            position: absolute;
+            top: 13px;
+            left: 15px;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 29px;
+                height: 1px;
+                background: black;
+                left: -45px;
+                top: 7px;
+            }
+        }
+        &_title {
+            padding-left: 56px;
+            font-size: 14px;
+            line-height: 21px;
+            position: relative;
+            @include before_circle;
+            &:before {
+                top: 10%;
+            }
+        }
+        &_subtitle {
+            padding-left: 56px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &_text {
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 140%;
+                background: black;
+                left: -30px;
+                top: -53px;
+            }
+        }
+    }
+
+
+}
