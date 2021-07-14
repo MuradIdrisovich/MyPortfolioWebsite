@@ -1,7 +1,7 @@
 {
-  "name": "pulse",
+  "name": "c",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://muradidrisovich.github.io/MyPortfolioWebsite/  мой сайт-портфолио с информацией обо мне и со всеми моими работами. Сайт адаптирован до мобильных устройств, имеет форму отправки писем, активное бургер-меню. Были использованы flex-box flex-grid, а также подключен и настроен Gulp",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +14,7 @@
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-rename": "^1.4.0",
@@ -24,5 +25,14 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuradIdrisovich/MyPortfolioWebsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MuradIdrisovich/MyPortfolioWebsite/issues"
+  },
+  "homepage": "https://github.com/MuradIdrisovich/MyPortfolioWebsite#readme"
 }
