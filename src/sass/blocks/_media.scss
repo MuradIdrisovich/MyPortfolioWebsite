@@ -139,8 +139,10 @@
     .container {
         width: 500px;
     }
-    .about__wrapper {
+    .about {
+        &__wrapper {
         grid-template-columns: 245px 253px;
+        }
     }
     .about__skill_descr {
         width: 220px;
@@ -178,6 +180,7 @@
 }
 
 @media (max-width: 575px) {
+
     .container {
         width: 300px;
     }
@@ -195,9 +198,20 @@
     .promo__btns {
         margin-top: 35px;
     }
-    .about__wrapper {
-        grid-template-columns: 300px;
-        grid-template-rows: repeat(3, 350px);
+    .about {
+        &__wrapper {
+        display: block;
+        // grid-template-columns: 300px;
+        // grid-template-rows: 350px ;
+        // row-gap: 40px;
+        }
+        &__skills {
+            margin-top: 30px;
+            display: block;
+        }
+        &__img {
+            height: 300px;
+        }
     }
     .about__me_title {
         margin-top: 15px;
@@ -209,6 +223,7 @@
         margin-top: 10px;
     }
     .experience {
+        margin-top: -40px;
         &__subheader {
             line-height: 35px;
             font-size: 25px;
@@ -217,7 +232,7 @@
             grid-template-columns: 400px;
         }
         &__column {
-            padding-left: 30px;
+            padding-left: 10px;
         }
     }
     .experience__item {
@@ -245,7 +260,7 @@
     }
     .portfolio__wrapper {
         grid-template-columns: 280px;
-        grid-template-rows: repeat(6, 280px);
+        grid-template-rows: repeat(9, 280px);
         grid-auto-rows: 280px;
         .horizontal {
             grid-row: unset;
@@ -259,6 +274,12 @@
         .vertical {
             // grid-row: unset;
             grid-column: unset;
+        }
+        .horizontal2 {
+            display: none;
+            grid-column: unset;
+            grid-row: unset;
+            
         }
     }
     .price__wrapper {
@@ -275,7 +296,7 @@
         }
         &__textarea {
             grid-column: unset;
-        height: 170px
+            height: 170px
         }
         &__footer {
             grid-column: unset;
