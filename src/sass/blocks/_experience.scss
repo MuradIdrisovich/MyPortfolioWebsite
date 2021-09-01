@@ -35,6 +35,15 @@
         font-size: 20px;
         line-height: 30px;
         position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 690px;
+            background: black;
+            left: -30px;
+            top: 22px;
+        }
         &:before {
             position: absolute;
             content: '';
@@ -84,15 +93,15 @@
             margin-top: 12px;
             font-size: 12px;
             line-height: 18px;
-            &:before {
-                content: "";
-                position: absolute;
-                width: 1px;
-                height: 140%;
-                background: black;
-                left: -30px;
-                top: -53px;
-            }
+            // &:before {
+            //     content: "";
+            //     position: absolute;
+            //     width: 1px;
+            //     height: 100px;
+            //     background: black;
+            //     left: -30px;
+            //     top: -53px;
+            // }
         }
     }
 

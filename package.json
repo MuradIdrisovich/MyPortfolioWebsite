@@ -2,9 +2,12 @@
   "name": "c",
   "version": "1.0.0",
   "description": "https://muradidrisovich.github.io/MyPortfolioWebsite/  мой сайт-портфолио с информацией обо мне и со всеми моими работами. Сайт адаптирован до мобильных устройств, имеет форму отправки писем, активное бургер-меню. Были использованы flex-box flex-grid, а также подключен и настроен Gulp",
-  "main": "gulpfile.js",
+  "homepage": "https://muradidrisovich.github.io/MyPortfolioWebsite/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "deploy": "gh-pages -d dist"
+    
   },
   "author": "",
   "license": "ISC",
@@ -26,13 +29,14 @@
     "maintained node versions",
     "not dead"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MuradIdrisovich/MyPortfolioWebsite.git"
   },
   "bugs": {
     "url": "https://github.com/MuradIdrisovich/MyPortfolioWebsite/issues"
-  },
-  "homepage": "https://github.com/MuradIdrisovich/MyPortfolioWebsite#readme"
+  }
 }

@@ -28,7 +28,7 @@ menuOverlayActive.addEventListener('click', () => {
 });
 
 const percentage = document.querySelectorAll('.rating__item_percentage'),
-           level = document.querySelectorAll('.rating__item_level');
+          level = document.querySelectorAll('.rating__item_level');
 
 percentage.forEach( (item , i) => {
     level[i].style.width = item.innerHTML;
