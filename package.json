@@ -5,9 +5,7 @@
   "homepage": "https://muradidrisovich.github.io/MyPortfolioWebsite/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "deploy": "gh-pages -d dist"
-    
   },
   "author": "",
   "license": "ISC",
